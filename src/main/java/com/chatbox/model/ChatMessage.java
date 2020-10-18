@@ -4,6 +4,8 @@ public class ChatMessage {
     private MessageType type;
     private String content;
     private String sender;
+    private String sendTo;
+    private String status = "online";
 
     public enum MessageType {
         CHAT,
@@ -33,5 +35,21 @@ public class ChatMessage {
 
     public void setSender(String sender) {
         this.sender = sender;
+    }
+
+    public String getSendTo() {
+        return sendTo;
+    }
+
+    public void setSendTo(String sendTo) {
+        this.sendTo = sendTo;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
